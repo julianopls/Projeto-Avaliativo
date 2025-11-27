@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Polyglot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Escola Polyglot</h1>
+    <nav>
+      <a href="#alunos">Alunos</a>
+      <a href="#professores">Professores</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#turmas">Turmas</a>
+      <a href="#matriculas">Matrículas</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="alunos" class="card">
+      <h2>Cadastro de Aluno</h2>
+      <div class="form-box">
+        <div class="input-group">
+          <label>Nome</label>
+          <input type="text" name="nome" placeholder="Digite o nome do aluno">
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Digite o e-mail">
+        </div>
+        <div class="input-group">
+          <label>Telefone</label>
+          <input type="text" name="telefone" placeholder="(xx) xxxxx-xxxx">
+        </div>
+        <div class="actions">
+          <button type="button">Cadastrar</button>
+          <a class="btn-link" href="/alunos">Listar Alunos</a>
+        </div>
+      </div>
+    </div>
+    <div id="professores" class="card">
+      <h2>Cadastro de Professor</h2>
+      <div class="form-box">
+        <div class="input-group">
+          <label>Nome</label>
+          <input type="text" name="nome" placeholder="Nome do professor">
+        </div>
+        <div class="input-group">
+          <label>Especialidade</label>
+          <input type="text" name="especialidade" placeholder="Ex: Inglês, Espanhol">
+        </div>
+        <div class="actions">
+          <button type="button">Cadastrar</button>
+          <a class="btn-link" href="/professores">Listar Professores</a>
+        </div>
+      </div>
+    </div>
+    <div id="cursos" class="card">
+      <h2>Cadastro de Curso</h2>
+      <div class="form-box">
+        <div class="input-group">
+          <label>Nome do Curso</label>
+          <input type="text" name="nome" placeholder="Ex: Inglês Básico">
+        </div>
+        <div class="input-group">
+          <label>Nível</label>
+          <input type="text" name="nivel" placeholder="Básico / Intermediário / Avançado">
+        </div>
+        <div class="input-group">
+          <label>Carga Horária</label>
+          <input type="number" name="carga_horaria" placeholder="Horas totais">
+        </div>
+        <div class="actions">
+          <button type="button">Cadastrar</button>
+          <a class="btn-link" href="/cursos">Listar Cursos</a>
+        </div>
+      </div>
+    </div>
+    <div id="turmas" class="card">
+      <h2>Criação de Turma</h2>
+      <div class="form-box">
+        <div class="input-group">
+          <label>ID do Curso</label>
+          <input type="number" name="id_curso" placeholder="Informe o ID do curso">
+        </div>
+        <div class="input-group">
+          <label>ID do Professor</label>
+          <input type="number" name="id_professor" placeholder="Informe o ID do professor">
+        </div>
+        <div class="input-group">
+          <label>Horário</label>
+          <input type="text" name="horario" placeholder="Ex: Seg/Qua 19h">
+        </div>
+        <div class="actions">
+          <button type="button">Criar Turma</button>
+          <a class="btn-link" href="/turmas">Listar Turmas</a>
+        </div>
+      </div>
+    </div>
+    <div id="matriculas" class="card">
+      <h2>Registrar Matrícula</h2>
+      <div class="form-box">
+        <div class="input-group">
+          <label>ID do Aluno</label>
+          <input type="number" name="id_aluno" placeholder="Informe o ID do aluno">
+        </div>
+        <div class="input-group">
+          <label>ID da Turma</label>
+          <input type="number" name="id_turma" placeholder="Informe o ID da turma">
+        </div>
+        <div class="actions">
+          <button type="button">Matricular</button>
+          <a class="btn-link" href="/matriculas">Listar Matrículas</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Polyglot © 2025 — Sistema de Gestão Escolar</p>
+  </footer>
+</body>
+</html>
